@@ -1,11 +1,14 @@
-import './App.css';
-import BucketList from './components/BucketList';
+import { Outlet } from 'react-router-dom';
+import NavbarSimple from './components/Navbar.jsx';
+import SimpleFooter from './components/SimpleFooter.jsx';
 
 function App() {
   return (
-    <div className="bucket-app">
-      <BucketList />
-    </div>
+    <>
+      <NavbarSimple />
+      <Outlet />
+      <SimpleFooter />
+    </>
   );
 }
 
